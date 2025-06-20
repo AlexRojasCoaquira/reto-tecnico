@@ -1,75 +1,57 @@
-# Nuxt Minimal Starter
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+# WEB EVENTS
 
-## Setup
+Este es un proyecto para mi dashboard donde se evalua sobre el reto tecnico donde se lista eventos.
 
-Make sure to install dependencies:
+
+## Características
+- 🔥 Framework: Nuxt 3 (Vue 3 + Vite)
+- 🎨 Estilos: TailwindCSS
+- 🔐 Tipado: TypeScript
+- 🔁 Consumo de servicios con `useFetch`
+- 📊 Dashboard con búsqueda de monedas
+- ♻️ Composables reutilizables (`useCoins`, `useServiceStatus`)
+
+
+# Installation
+
+Clona el repositorio y entra al proyecto:
 
 ```bash
-# npm
+git clone https://github.com/AlexRojasCoaquira/reto-tecnico.git
+cd reto-tecnico
+```
+Instala las dependencias
+```bash
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
+Crea un archivo .env en la raiz con esta variable
 ```bash
-# npm
+NUXT_PUBLIC_API= https://api.tvmaze.com
+```
+Ejecuta en desarrollo:
+```bash
 npm run dev
+```
+## 🔗 Demo
 
-# pnpm
-pnpm dev
+🎯 **[Ver demo en vivo](https://reto-tecnico-orcin.vercel.app/**
 
-# yarn
-yarn dev
 
-# bun
-bun run dev
+## API Reference
+En esta parte se muestra los servicios utilizados para el.
+#### Obtener todos los eventos
+
+```http
+  GET /api/shows
+```
+#### Obtener detalle del evento
+
+```http
+  GET /api/shows/${id}
 ```
 
-## Production
+## Screenshots
 
-Build the application for production:
+![App Screenshot](https://res.cloudinary.com/ddq6ilgjr/image/upload/v1750401901/Captura_de_pantalla_2025-06-20_014301_hanylr.png)
 
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

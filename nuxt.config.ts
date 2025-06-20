@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   runtimeConfig:{
     public: {
-      apiBaseUrl: process.env.NUXT_PUBLIC_API
+      apiBaseUrl: process.env.NUXT_PUBLIC_API ?? 'https://api.tvmaze.com'
     }
   },
   css: ['~/assets/css/main.css'],

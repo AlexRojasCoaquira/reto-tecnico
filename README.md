@@ -51,7 +51,4 @@ En esta parte se muestra los servicios utilizados para el.
   GET /api/shows/${id}
 ```
 
-## Screenshots
-
-![App Screenshot](https://res.cloudinary.com/ddq6ilgjr/image/upload/v1750401901/Captura_de_pantalla_2025-06-20_014301_hanylr.png)
 

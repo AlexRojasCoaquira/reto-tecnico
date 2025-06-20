@@ -94,7 +94,6 @@ const openModal = () => {
 const handleSubmit = async () => {
   try {
     isLoad.value = true
-    console.log('validateEmail', validateEmail('asdasd@asd.com'));
     if (!form.name || !form.email) {
       msgError.value = 'Por favor, completa todos los campos obligatorios.'
       isLoad.value = false

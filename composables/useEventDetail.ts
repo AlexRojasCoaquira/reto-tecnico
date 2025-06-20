@@ -1,6 +1,6 @@
 
 import type { Show } from '@/interfaces/model/event'
-export const useEvent = (id: number): {
+export const useEventDetail = (id: number): {
   data: Ref<Show[] | null>,
   error: Ref<any>,
   status: Ref<'idle' | 'pending' | 'success' | 'error'>
